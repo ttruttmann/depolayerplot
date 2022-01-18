@@ -56,9 +56,9 @@ Finally, apply the stack to a Matplotlib axes:
     >>> import matplotlib.pyplot as plt
     >>> figure, axes = plt.subplots()
     >>> transistor_stack.apply_to_ax(axes,render_hidden_faces=False)
-    >>> figure.savefig('simple_transistor_stack.pdf',bbox_inches='tight')
+    >>> figure.savefig('simple_transistor_stack.png',bbox_inches='tight')
 
-.. image:: test/simple_transistor_stack.pdf
+.. image:: test/simple_transistor_stack.png
 
 Constructor arguments
 =====================
