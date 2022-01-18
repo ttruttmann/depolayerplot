@@ -3,7 +3,13 @@ Depolayerplot: Illustrate heterostructures in Matplotlib
 
 Depolayerplot is a Python package that visualizes deposition stacks inside Matplotlib Axes. It uses an intuitive and user-friendly object-oriented interface. It produces fully vectorized graphics with highlightable text.
 
-First load package classes: 
+Install with pip:
+
+.. code-block:: bash
+
+    $ pip install git+https://github.com/ttruttmann/depolayerplot
+
+To use, first load package classes: 
 
 .. code-block:: python
 
