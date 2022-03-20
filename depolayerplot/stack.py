@@ -3,7 +3,7 @@ from matplotlib.patches import Polygon
 from .layer import Layer
 
 class Stack:
-    def __init__(self,x_center,y_base,layers=[Layer()],width=0.4,depth_x=0.08,depth_y=0.08):
+    def __init__(self,x_center,y_base,layers=[Layer()],width=0.4,depth_x=0.06,depth_y=0.05):
         if not isinstance(x_center,float): raise TypeError('x_center must be a float')
         if not isinstance(y_base,float): raise TypeError('y_center must be a float')
         if not hasattr(layers,'__iter__'):
@@ -102,7 +102,7 @@ class Stack:
         y0 = self.y_base + height_from_base + layer.height
         y1 = y0 + self.depth_y
         face = Polygon([[x0,y0],[x2,y0],[x3,y1],[x1,y1]],transform=ax.transAxes,
-                       facecolor=layer.side_face_color,edgecolor=layer.edge_color,
+                       facecolor=layer.top_face_color,edgecolor=layer.edge_color,
                        linewidth=layer.edge_width,
                        joinstyle='round'
         )
